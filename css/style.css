@@ -35,7 +35,7 @@ section {
 .nav-overlay a {
   padding: .5em;
   text-decoration: none;
-  font-size: 2em;
+  font-size: 1.75em;
   display: block;
   transition: 0.3s;
 }
