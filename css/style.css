@@ -61,3 +61,11 @@ section {
 #navOverlay a {
   color: #fff;
 }
+#space-fix {
+	height: 5em;
+}
+#bottom-bio-pic {
+	top: -7.5em;
+	position: relative;
+	border: .1em solid #343a40;
+}
