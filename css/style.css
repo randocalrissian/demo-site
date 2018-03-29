@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+* {
+  font-family: 'Roboto', sans-serif;
+}
+header {
+  padding: 14em 0 8em;
+  height: 100vh;
+  display: flex;
+}
+section {
+  padding-top: 5em;
+  padding-bottom: 20em;
+  padding-left: 0;
+  padding-right: 0;
+  min-height: 100vh;
+}
+.nav-overlay {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: rgba(255,255,255, 0.9);
+  overflow-x: hidden;
+  transition: 0.33s;
+}
+.nav-overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.nav-overlay a {
+  padding: .5em;
+  text-decoration: none;
+  font-size: 2em;
+  display: block;
+  transition: 0.3s;
+}
+
+.nav-overlay .cancelbtn {
+  position: absolute;
+  top: .5em;
+  right: 1.1em;
+  font-size: 3em;
+  margin: 0;
+}
+#navToggle {
+  top: 2em;
+  right: 2em;
+  position: absolute;
+  font-size: 2em;
+  margin: 0;
+  transition: 0.33s;
+}
+#navOverlay {
+  width: 0%;
+}
+#navOverlay a {
+  color: #fff;
+}

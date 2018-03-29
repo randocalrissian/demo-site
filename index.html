@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Randall McDonnell</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body id="page-top">
+<!-- nav overlay start -->
+    <div id="navOverlay" class="nav-overlay bg-dark">
+      <a href="javascript:void(0)" class="cancelbtn" onclick="closeNav()">&times;</a>
+      <div class="nav-overlay-content" id="overlayContent">
+        <a class="js-scroll-trigger" onclick="closeNav()" href="#page-top">Back to the top</a>        
+        <a class="js-scroll-trigger" onclick="closeNav()" href="#about">About me</a>
+        <a class="js-scroll-trigger" onclick="closeNav()" href="#stuffido">Stuff I do</a>
+        <a class="js-scroll-trigger" onclick="closeNav()" href="#connect">Connect with me</a>
+      </div>
+    </div>
+<!-- end overlay, begin hamburger nav toggle -->
+    <nav class="navbar fixed-top" id="mainNav">      
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"></a>
+        <button id="navToggle" class="navbar-toggler bg-primary" type="button" onclick="openNav()">
+          <span class="text-white">&#9776;</span>
+        </button>
+        <script>
+          function openNav() {
+            document.getElementById("navOverlay").style.width = "100%";
+            document.getElementById("navToggle").style.display = "none";
+          }
+          function closeNav() {
+            document.getElementById("navOverlay").style.width = "0%";
+            document.getElementById("navToggle").style.display = "block";
+          }
+        </script>
+      </div>
+    </nav>
+<!-- end of nav, begin header -->
+    <header class="bg-primary text-white">
+      <div class="container text-center">
+        <div class="h-100">
+          <h1>Hi, I'm Randy!</h1>
+          <p class="h2">Let's build something cool together.</p>
+        </div>
+        <div>
+          <p class="h1"><a href="#about" class="js-scroll-trigger text-white"><span>&#8675</span></a></p>
+        </div>
+      </div>
+    </header>
+<!-- end header, start first content section -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <p class="h1"><a href="#page-top" class="js-scroll-trigger text-primary"><span>&#8673</span></a></p>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>About Me</h2>
+            <p class="lead">I'm a never-ending radical dude.</p>
+          </div>
+        </div>
+        <div class="row">
+          <p class="h1"><a href="#stuffido" class="js-scroll-trigger text-primary"><span>&#8675</span></a></p>
+        </div>
+      </div>
+    </section>
+<!-- end first, start second -->
+    <section id="stuffido" class="bg-light">
+      <div class="container">
+        <div class="row">
+          <p class="h1"><a href="#about" class="js-scroll-trigger text-primary"><span>&#8673</span></a></p>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Stuff I do</h2>
+            <p class="lead">Everything. Any questions?</p>
+          </div>
+        </div>
+        <div class="row">
+          <p class="h1"><a href="#connect" class="js-scroll-trigger text-primary"><span>&#8675</span></a></p>
+        </div>        
+      </div>
+    </section>
+<!-- end 2nd, start 3rd -->
+    <section id="connect" class="pb-4 mb-4">
+      <div class="container">
+        <div class="row">
+          <p class="h1"><a href="#stuffido" class="js-scroll-trigger text-primary"><span>&#8673</span></a></p>
+        </div>        
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Connect with me</h2>
+            <p class="lead">Or like, ya know, whatever.</p>
+            <form class="mt-4">
+              <div class="row">
+                 <div class="col-lg-12 mx-auto">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="name" placeholder="Your name" required="required" />
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group">
+                      <input type="email" class="form-control" id="email" placeholder="Enter email address" required="required" />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group">
+                      <input type="phone" class="form-control" id="phone" placeholder="Your phone number" required="required" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12 mx-auto">
+                  <div class="form-group">
+                    <textarea name="message" id="message" class="form-control" rows="8" cols="25" required="required" placeholder="What's up?"></textarea>
+                    <button type="submit" class="btn btn-primary float-right mt-4" id="btnConnectWithMe">
+                    Send Message</button>
+                  </div>
+                </div>
+              </div>
+            </form>  
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- end 3rd content section, start footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">&copy; 2018 Randall McDonnell</p>
+        <div class="col-12 col-md-12 text-center">
+          <img class="img-responsive rounded-circle m-4" width="175" height="175" src="./images/me.jpg" alt="Randy and Opie">
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="js/nav.js"></script>
+  </body>
+</html>
