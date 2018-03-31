@@ -21,7 +21,7 @@ section {
   z-index: 10;
   top: 0;
   left: 0;
-  background-color: rgba(255,255,255, 0.9);
+  background-color: rgba(52,58,64, 0.9);
   overflow-x: hidden;
   transition: 0.33s;
 }
@@ -68,4 +68,10 @@ section {
 	top: -7.5em;
 	position: relative;
 	border: 1px solid #343a40;
+}
+::-webkit-input-placeholder {
+   font-size: 1.3em;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+      font-size: 1.3em;
 }
