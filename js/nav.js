@@ -15,9 +15,13 @@
   });
   // Navigation overlay toggle
   $(document).ready(function(){
-    $(".toggle-menu").click(function(){
-        $("#navOverlay").toggle(250);
-        $("#navToggle").toggle(250);
+    $(".toggle-menu-closed").click(function(){
+      $("#navOverlay").animate({left: '100vw'}, 250);
+      $("#navToggle").toggle(250);
+    });
+    $(".toggle-menu-open").click(function(){
+      $("#navOverlay").animate({left: '0vw'}, 250);
+      $("#navToggle").toggle(250);
     });
   });
 })(jQuery); 
