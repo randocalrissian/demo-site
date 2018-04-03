@@ -56,7 +56,7 @@ section {
   transition: 0.33s;
 }
 #navOverlay {
-  width: 0%;
+  display: none;
 }
 #navOverlay a {
   color: #fff;

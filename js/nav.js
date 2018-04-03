@@ -1,5 +1,5 @@
 (function($) {
-  "use strict"; // Start of use strict
+  "use strict"; 
 
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
@@ -14,11 +14,10 @@
       }
     }
   });
-
-  // Activate scrollspy to add active class to navbar items on scroll
-  $('body').scrollspy({
-    target: '#mainNav',
-    offset: 54
-  });
-
-})(jQuery); // End of use strict
+})(jQuery); 
+$(document).ready(function(){
+    $(".toggle-menu").click(function(){
+        $("#navOverlay").toggle(250);
+        $("#navToggle").toggle(250);
+    });
+});
