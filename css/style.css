@@ -44,8 +44,11 @@ section {
   right: .3em;
   font-size: 3em;
   margin: 0;
+  padding: 0;
   width: 1.5em;
   border: 0;
+  color: #fff;
+  background-color: transparent;
 }
 #navToggle {
   top: 0.75em;

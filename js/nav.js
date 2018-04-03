@@ -17,12 +17,12 @@
   $(document).ready(function() {
     $(".toggle-menu-closed").click(function() {
       $("#navOverlay").animate({left: '100vw'}, 250, function() {
-        $("#navToggle").toggle(250);
+        $("#navToggle").show(250);
       });
     });
     $(".toggle-menu-open").click(function(){
       $("#navOverlay").animate({left: '0vw'}, 250, function() {
-        $("#navToggle").toggle(250);
+        $("#navToggle").hide(250);
       });
     });
   });
