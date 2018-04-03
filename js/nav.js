@@ -17,13 +17,17 @@
   $(document).ready(function() {
     $(".toggle-menu-closed").click(function() {
       $("#navOverlay").animate({left: '100vw'}, 250, function() {
-        $("#navToggle").show(250);
+        $("#burgerMenu").show(250);
       });
     });
-    $(".toggle-menu-open").click(function(){
-      $("#navOverlay").animate({left: '0vw'}, 250, function() {
-        $("#navToggle").hide(250);
+    $(".toggle-menu-open").click(function() {
+      $("#burgerMenu").hide(150, function() {
+        $("#navOverlay").animate({left: '0vw'}, 250);
       });
     });
+//    $(".toggle-menu-open").click(function(){
+//      $("#navOverlay").animate({left: '0vw'}, 250, function() {
+//        $("#burgerMenu").hide(250);
+//      });
   });
 })(jQuery); 
