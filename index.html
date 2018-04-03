@@ -12,12 +12,12 @@
   <body id="top">
 <!-- nav overlay start -->
     <div id="navOverlay" class="nav-overlay">
-      <a href="javascript:void(0)" class="cancelbtn" onclick="closeNav()">&times;</a>
+      <a href="" class="toggle-menu cancelbtn">&times;</a>
       <div class="nav-overlay-content" id="overlayContent">
-        <a class="js-scroll-trigger" onclick="closeNav()" href="#top">Back to the top</a> 
-        <a class="js-scroll-trigger" onclick="closeNav()" href="#about">About me</a>
-        <a class="js-scroll-trigger" onclick="closeNav()" href="#stuffido">Stuff I do</a>
-        <a class="js-scroll-trigger" onclick="closeNav()" href="#connect">Connect with me</a>
+        <a class="toggle-menu js-scroll-trigger" href="#top">Back to the top</a> 
+        <a class="toggle-menu js-scroll-trigger" href="#about">About me</a>
+        <a class="toggle-menu js-scroll-trigger" href="#stuffido">Stuff I do</a>
+        <a class="toggle-menu js-scroll-trigger" href="#connect">Connect with me</a>
       </div>
     </div>
 <!-- end overlay, begin hamburger nav toggle -->
@@ -37,6 +37,7 @@
             document.getElementById("navToggle").style.display = "block";
           }
         </script>
+
       </div>
     </nav>
 <!-- end of nav, begin header -->
@@ -52,9 +53,9 @@
       </div>
     </header>
 <!-- end header, start first content section -->
-    <section id="about">
+    <section>
       <div class="container">
-        <div class="row">
+        <div class="row" id="about">
           <p class="h1 text-center w-100"><a href="#top" class="js-scroll-trigger text-primary"><span>&#8673</span></a></p>
         </div>
         <div class="row">
@@ -72,9 +73,9 @@
       </div>
     </section>
 <!-- end first, start second -->
-    <section id="stuffido" class="bg-primary text-white">
+    <section class="bg-primary text-white">
       <div class="container">
-        <div class="row">
+        <div class="row" id="stuffido">
           <p class="h1 text-center w-100"><a href="#about" class="js-scroll-trigger text-white"><span>&#8673</span></a></p>
         </div>
         <div class="row">
@@ -92,10 +93,10 @@
       </div>
     </section>
 <!-- end 2nd, start 3rd -->
-    <section id="connect" class="pb-4 mb-4">
+    <section class="pb-4 mb-4">
       <div class="container">
-        <div class="row">
-          <p class="h1 text-center w-100"><a href="#stuffido" class="js-scroll-trigger text-primary"><span>&#8673</span></a></p>
+        <div class="row" id="connect">
+          <p class="h1 text-center w-100"><br/><a href="#stuffido" class="js-scroll-trigger text-primary"><span>&#8673</span></a></p>
         </div>        
         <div class="row">
           <div class="col-lg-8 mx-auto">
@@ -145,5 +146,13 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="js/nav.js"></script>
+<script>
+$(document).ready(function(){
+    $(".toggle-menu").click(function(){
+        $("#navOverlay").toggle(500);
+        $("#navToggle").toggle(500);
+    });
+});
+</script>
   </body>
 </html>
