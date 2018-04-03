@@ -23,7 +23,6 @@ section {
   left: 0;
   background-color: rgba(52,58,64, 0.9);
   overflow-x: hidden;
-  transition: 0.33s;
 }
 .nav-overlay-content {
   position: relative;
@@ -37,15 +36,16 @@ section {
   text-decoration: none;
   font-size: 1.75em;
   display: block;
-  transition: 0.3s;
 }
 
 .nav-overlay .cancelbtn {
   position: absolute;
-  top: -0.3em;
+  top: 0.2em;
   right: .3em;
   font-size: 3em;
   margin: 0;
+  width: 1.5em;
+  border: 0;
 }
 #navToggle {
   top: 0.75em;
@@ -53,7 +53,6 @@ section {
   position: absolute;
   font-size: 2em;
   margin: 0;
-  transition: 0.33s;
 }
 #navOverlay {
   left: 100vw;
