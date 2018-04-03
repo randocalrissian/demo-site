@@ -14,14 +14,16 @@
     }
   });
   // Navigation overlay toggle
-  $(document).ready(function(){
-    $(".toggle-menu-closed").click(function(){
-      $("#navOverlay").animate({left: '100vw'}, 250);
-      $("#navToggle").toggle(250);
+  $(document).ready(function() {
+    $(".toggle-menu-closed").click(function() {
+      $("#navOverlay").animate({left: '100vw'}, 250, function() {
+        $("#navToggle").toggle(250);
+      });
     });
     $(".toggle-menu-open").click(function(){
-      $("#navOverlay").animate({left: '0vw'}, 250);
-      $("#navToggle").toggle(250);
+      $("#navOverlay").animate({left: '0vw'}, 250, function() {
+        $("#navToggle").toggle(250);
+      });
     });
   });
 })(jQuery); 
